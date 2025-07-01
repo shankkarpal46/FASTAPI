@@ -1,12 +1,15 @@
-from fastapi import FastAPI
+from fastapi import FastAPI     # importing FastAPI
 
-app = FastAPI()
+app = FastAPI()                 # creating an instance of FastAPI
 
 @app.get('/')
 def index():
     return {'data':{'name':'Shankar'}}
 
-@app.get('/about')
+@app.get('/about/')
 def about():
     return {'data':{"About page"}}
+
+
+
 
