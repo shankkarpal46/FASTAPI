@@ -19,3 +19,7 @@ def comments(id):
 def uncomplished():
     return {'data':'all uncomplished blogs'}
 
+@myapp.post('/blog')
+def create_blog():
+    return {'data':"Blog is created."}
+
